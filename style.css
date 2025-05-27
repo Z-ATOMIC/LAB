@@ -1,37 +1,55 @@
-
-body {
+/* Reset dasar */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
+    height: 100vh;
     background-image: url('background-z-atomic.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 
+/* Kontainer utama di tengah */
 .container {
     text-align: center;
-    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparan agar teks terlihat */
+    padding: 40px;
+    border-radius: 12px;
 }
 
+/* Logo */
 .logo {
-    width: 200px;
+    width: 180px;
     height: auto;
+    margin-bottom: 20px;
 }
 
+/* Tombol */
 .buttons {
     margin-top: 20px;
 }
 
 button {
-    padding: 10px 20px;
-    margin: 10px 
+    padding: 12px 24px;
+    margin: 10px;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.6)
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
